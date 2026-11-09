@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+   
+    min-height: 100%;
+    font-family: "Rechgart","Luxurious Roman";
+}
+footer{
+text-align: center;
+  padding: 3px;
+  background: #202b22;
+  color: white;
+  }
+body {
+    background: #ffd28e;
+    position: relative;
+    min-height: 100vh;
+}
+.dbtn{
+
+display:flex;
+justify-content: space-evenly;
+}
+
+.h-btn {
+font-family: "Luxurious Roman";
+font-size: 1.5rem; color: #fff;
+padding: 15px 30px;
+margin: 10px;
+border: 2px solid #FFD28E; border-radius: 50px; background: transparent; cursor: pointer;
+transition: 0.3s ease-in-out;
+position: relative;
+overflow: hidden;
+}
+
+.h-btn::before { 
+content:'';
+position: absolute;
+top: -50%;
+left: -50%;
+width: 200%;
+height: 200%;
+background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 255, 255, 0) 70%);
+transition: 0.4s; 
+transform: scale(0);
+}
+
+.h-btn:hover::before {
+	transform: scale(1);
+}
+.h-btn:hover {
+color: #000;
+background: #FFD28E;
+box-shadow: 0 0 2px #FFD28E, 0 0 10px #FFD28E, 0 0 30px #FFD28E;
+}
+.h-btn:active {
+transform: scale (0.95);
+}
+.navi {
+	font-family: "Luxurious Roman";
+    background: transparent;
+    position: fixed;
+    top: 0;
+    margin: 0px;
+    z-index: 999;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navi ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lef {
+font-family: "Rechgart";
+color: #ffd28e;
+    display: flex;
+    font-size:35px;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0 16px !important;
+}
+.lef h3{
+font-weight: 600;
+font-size:70;
+}
+.lef img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.rig {
+    gap: 10px;
+}
+.navi a{
+
+text-decoration: none;
+  display: block;
+  color: #ffd28e;
+  font-size:16px;
+  font-weight:500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transform: perspective(700px) translateY(0px);
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;;
+}
+.navi a:hover{
+color:  #FFE2B7;
+transform: perspective(700px) translateY(-2PX);
+border-bottom: 1px solid white;
+}
+@font-face {
+    font-family: "Rechgart";
+    src: url("./fonts/rechgart-bold.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+.hero {
+z-index:1000;
+    background: url(1.png);
+    font-family: "Rechgart";
+    color: #ffd28e;
+    background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+text-shadow:
+            0 0 5px #ffd28e,
+            0 0 15px #ffd28e,
+            0 0 30px #ffd28e;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    font-size: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
